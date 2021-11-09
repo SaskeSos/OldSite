@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Open+Sans:wght@400;700&family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="Описание страницы">
+
+        <title>StudyHelp</title>
+
+
+
+
+    </head>
+
+    <body>
+
+
+    <!--Sprite-->
+    <svg style="display: none;">
+        <symbol id="facebook" viewBox="0 0 24 24">
+            <g>
+                <path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"/>
+            </g>
+        </symbol>
+
+        <symbol id="twitter" viewBox="0 0 512 512">
+            <g>
+                <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+			c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+			c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+			c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+			c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+			c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+			C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+			C480.224,136.96,497.728,118.496,512,97.248z"/>
+            </g>
+        </symbol>
+
+        <symbol id="linkedin" viewBox="0 0 510 510">
+            <g>
+                <path d="M459,0H51C22.95,0,0,22.95,0,51v408c0,28.05,22.95,51,51,51h408c28.05,0,51-22.95,51-51V51C510,22.95,487.05,0,459,0z
+			 M153,433.5H76.5V204H153V433.5z M114.75,160.65c-25.5,0-45.9-20.4-45.9-45.9s20.4-45.9,45.9-45.9s45.9,20.4,45.9,45.9
+			S140.25,160.65,114.75,160.65z M433.5,433.5H357V298.35c0-20.399-17.85-38.25-38.25-38.25s-38.25,17.851-38.25,38.25V433.5H204
+			V204h76.5v30.6c12.75-20.4,40.8-35.7,63.75-35.7c48.45,0,89.25,40.8,89.25,89.25V433.5z"/>
+            </g>
+        </symbol>
+    </svg>
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <img src="img/logo.png" alt="">
+                </div>
+                
+                <nav class="nav" id="nav">
+                    <a href="#" class="nav__link" data-scroll="#features">Преимущества</a>
+                    <a href="#" class="nav__link" data-scroll="#works">Услуги</a>
+                    <a href="#" class="nav__link" data-scroll="#team">Команда</a>
+                    <a href="#" class="nav__link" data-scroll="#about">О нас</a>
+                    <a href="#" class="nav__link" data-scroll="#footer">Контакты</a>
+
+                </nav>
+
+                <button class="burger" type="button" id="navToggle">
+                    <span class="burger__item">Menu</span>
+                </button>
+
+
+            </div> <!--./header__inner-->
+
+        </div> <!--/.container-->
+
+    </header> <!--/header-->
+
+
+<!-- INTRO -->
+
+    <div class="intro" id="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <h1 class="intro__title">Твой единственный помощник с трудными задачами</h1>
+                <h2 class="intro__subtitle"><p>Тысячи студентов защитили диссертации, магистерские, кандидатские, дипломные и курсовые работы, написали контрольные на отлично и получили высшее образование.</p></h2>
+
+                <h2 class="intro__subtitle_sub"><p>Рекомендации заказчиков и отзывы о работе наших экспертов вдохновляют нас на решение самых трудных задач.</p><p>Мы делаем сложное понятным!</p></h2>
+
+            </div> <!-- /.intro__inner -->
+        </div> <!-- /.container -->
+
+    </div> <!-- /.intro -->
+
+
+    <!-- Features -->
+
+    <div class="features" id="features">
+        <div class="container">
+            <div class="features__item">
+                <img class="features__icon" src="img/features/secret-file.svg" alt="">
+
+                
+                <div class="features__title">
+                    Конфиденциальность и надежность
+                </div>
+                
+                <div class="features__text">
+                    <p>Официальный договор публичной оферты</p> <p>Строгая политика конфиденциальности</p><p>Политика гарантии возврата</p>
+                </div>
+                
+                
+            </div>
+
+            <div class="features__item">
+                <img class="features__icon" src="img/features/medal.svg" alt="">
+
+
+                <div class="features__title">
+                    Гарантийное обслуживание
+                </div>
+
+                <div class="features__text">
+                    <p>Сопровождение до защиты </p><p>Грамотное решение самых сложных задач по любым дисциплинам</p> <p>Бесплатные доработки в течение 60 дней</p>
+                </div>
+
+
+            </div>
+
+            <div class="features__item">
+                <img class="features__icon" src="img/features/diamond.svg" alt="">
+
+
+                <div class="features__title">
+                    Сервис и комфорт
+                </div>
+
+                <div class="features__text">
+                    <p>Всегда на связи – заказы принимаются 7 дней в неделю</p> <p>Индивидуальный подход и забота о каждом клиенте</p><p>Оперативная поддержка клиента по всем каналам связи</p>
+                </div>
+
+
+            </div>
+
+            <div class="features__item">
+                <img class="features__icon" src="img/features/hourglass.svg" alt="">
+
+
+                <div class="features__title">
+                    Качество и своевременность
+                </div>
+
+                <div class="features__text">
+                    <p>Соблюдение сроков выполнения заданий</p> <p>Проверка каждого заказа отделом контроля качества</p><p> Отчет о проверке на Антиплагиат по каждой работе</p>
+                </div>
+
+
+            </div>
+
+        </div> <!--/.container-->
+    </div> <!--/.features -->
+
+    <!-- WORKS -->
+
+    <div class="works" id="works">
+        <div class="container">
+
+            <div class="works__item">
+                <div class="works__title">
+                    Дипломная работа
+                </div>
+
+                <img class="works__icon"  src="img/works/certificate.svg" alt="">
+
+
+                <div class="works__text">
+                    <p>от 40 стр</p>
+                    <p>от 7000 руб</p>
+                </div>
+            </div>
+
+            <div class="works__item">
+                <div class="works__title">
+                    Курсовая работа
+                </div>
+
+                <img class="works__icon"  src="img/works/research.svg" alt="">
+
+
+                <div class="works__text">
+                    <p>от 20 стр</p>
+                    <p>от 1000 руб</p>
+                </div>
+            </div>
+
+            <div class="works__item">
+                <div class="works__title">
+                    Контрольная работа
+                </div>
+
+                <img class="works__icon"  src="img/works/idea.svg" alt="">
+
+
+                <div class="works__text">
+                    <p>от 5 стр</p>
+                    <p>от 400 руб</p>
+                </div>
+            </div>
+
+            <div class="works__item">
+                <div class="works__title">
+                    Отчет по практике
+                </div>
+
+                <img class="works__icon"  src="img/works/traffic.svg" alt="">
+
+
+                <div class="works__text">
+                    <p>от 15 стр</p>
+                    <p>от 3000 руб</p>
+                </div>
+            </div>
+
+            <div class="works__item">
+                <div class="works__title">
+                    реферат
+                </div>
+
+                <img class="works__icon"  src="img/works/atom.svg" alt="">
+
+
+                <div class="works__text">
+                    <p>от 4 стр</p>
+                    <p>от 700 руб</p>
+                </div>
+            </div>
+
+            <div class="works__item">
+                <div class="works__title">
+                    Магистерсткая работа
+                </div>
+
+                <img class="works__icon"  src="img/works/microscope.svg" alt="">
+
+
+                <div class="works__text">
+                    <p>от 50 стр</p>
+                    <p>от 10000 руб</p>
+                </div>
+            </div>
+
+        </div> <!--/.container-->
+    </div> <!-- /.works -->
+
+<div class="about" id="about">
+    <div class="container">
+        <div class="about__items">
+            <div class="about__title">
+                О нас
+            </div>
+            <div class="about__text">
+                <p>Команда «STUDY HELP!» — это сплав позитивных молодых людей и опытных управленцев. Наши сотрудники ценят креативность и юмор, для нас важно видеть хорошие результаты своего труда, мы рады помогать учащимся независимо от их ситуации в ВУЗе.</p><p>Мы наладили процессы, начиная от звонка клиента и поступления заявки до получения студентом готового задания. Наши менеджеры проходят специальные курсы обслуживания клиентов, а потому умеют помогать быстро и действенно, чтобы каждый клиент получал высокий уровень сервиса, и как следствие отличные оценки.</p><p>Авторы компании – преподаватели и аспиранты ведущих ВУЗов страны. Они ежегодно проходят специальные курсы повышения квалификации, посещают семинары, ездят на стажировку, участвуют в научных конференциях. Наши эксперты всегда в курсе актуальных нововведений и готовы выполнить задание по любой дисциплине. Система внутреннего рейтинга автора мотивирует исполнителей заказов делать свою работу качественно и своевременно.</p><p>Мы еще не первые в своей отрасли, а потому нам приходится стараться больше других, чтобы доказать, что мы достойны быть первыми.</p>
+            </div>
+        </div>
+    </div>
+</div> <!-- /.ABOUT -->
+
+
+    <!-- TEAM -->
+
+    <div class="team" id="team">
+        <div class="container">
+
+            <div class="team__inner">
+
+            <div class="team__item">
+                <img class="team__photo" src="img/team/ssha.jpg" alt="">
+                <div class="team__name">
+                    Петров Валентин
+                </div>
+
+                <div class="team__prof">
+                    Исполнитель, отдел контроля качества
+                </div>
+
+                <div class="social">
+
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#facebook"></use>
+                        </svg>
+                    </a>
+
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#twitter"></use>
+                        </svg>
+                    </a>
+
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#linkedin"></use>
+                        </svg>
+                    </a>
+
+                </div>
+
+            </div>
+
+                <div class="team__item">
+                    <img class="team__photo" src="img/team/2.jpg" alt="">
+                    <div class="team__name">
+                        Лякшо Евгений
+                    </div>
+
+                    <div class="team__prof">
+                        Менежер, исполнитель
+                    </div>
+
+                    <div class="social">
+
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#linkedin"></use>
+                            </svg>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="team__item">
+                    <img class="team__photo" src="img/team/0030.jpg" alt="">
+                    <div class="team__name">
+                        Шарко Константин
+                    </div>
+
+                    <div class="team__prof">
+                        Исполнитель
+                    </div>
+
+                    <div class="social">
+
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#linkedin"></use>
+                            </svg>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="team__item">
+                    <img class="team__photo" src="img/team/37.jpg" alt="">
+                    <div class="team__name">
+                        Нарыкова Анастасия
+                    </div>
+
+                    <div class="team__prof">
+                        Исполнитель, менеджер
+                    </div>
+
+                    <div class="social">
+
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#linkedin"></use>
+                            </svg>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                </div>
+        </div>
+    </div>
+
+
+    <!--Footer-->
+
+    <footer class="footer" id="footer">
+        <div class="container">
+
+            <div class="footer__inner">
+
+                <div class="footer__block">
+                    <h4 class="footer__title">Контактные данные
+                    </h4>
+                    <address class="footer__address">
+                        <a class="contacts__email" href="mailto:nikgeht@gmail.com" target="_blank" rel="noopener noreferrer">nikgeht@gmail.com</a>
+                        <div>+7 (999) 123 12 12</div>
+                    </address>
+                </div>
+
+                <div class="footer__block">
+                    <h4 class="footer__title">Share with love
+                    </h4>
+                    <div class="social  social--footer">
+
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#linkedin"></use>
+                            </svg>
+                        </a>
+
+                    </div>
+
+
+
+                </div>
+
+
+
+            </div> <!--/.footer__inner-->
+
+        </div> <!--/.container-->
+
+        <div class="copyright">
+            <div class="container">
+                <div class="copyright__text">
+                    <div>Copyright @ 2020 StudyHELP. All rights Reserved</div> <div>Made  <span>by Nikita Gekht</span></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--JavaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="app.js"></script>
+
+    </body>
+<!---->
+
+
+
+
+
+
+
+
+</html>
